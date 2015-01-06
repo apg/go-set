@@ -4,7 +4,7 @@ type Set struct {
 	elements map[interface{}]struct{}
 }
 
-// New creates and returns a new, empty set.
+// New creates and returns a new set containing `xs`.
 func New(xs ...interface{}) *Set {
 	n := make(map[interface{}]struct{})
 	for _, x := range xs {
